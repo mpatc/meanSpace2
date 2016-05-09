@@ -1,6 +1,6 @@
 {
-  "name": "meanjs",
-  "description": "Fullstack JavaScript with MongoDB, Express, AngularJS, and Node.js.",
+  "name": "passport",
+  "description": "a way to connect socially",
   "homepage": "http://meanjs.org/",
   "license": "MIT",
   "dependencies": {

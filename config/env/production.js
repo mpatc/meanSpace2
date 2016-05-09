@@ -29,7 +29,11 @@ module.exports = {
         directoryPath: process.env.LOG_DIR_PATH || process.cwd(),
         fileName: process.env.LOG_FILE || 'access.log',
         rotatingLogs: { // for more info on rotating logs - https://github.com/holidayextras/file-stream-rotator#usage
+<<<<<<< HEAD
           active: process.env.LOG_ROTATING_ACTIVE === 'true', // activate to use rotating logs
+=======
+          active: process.env.LOG_ROTATING_ACTIVE === 'true' ? true : false, // activate to use rotating logs
+>>>>>>> newbranch
           fileName: process.env.LOG_ROTATING_FILE || 'access-%DATE%.log', // if rotating logs are active, this fileName setting will be used
           frequency: process.env.LOG_ROTATING_FREQUENCY || 'daily',
           verbose: process.env.LOG_ROTATING_VERBOSE === 'true'
@@ -38,8 +42,8 @@ module.exports = {
     }
   },
   facebook: {
-    clientID: process.env.FACEBOOK_ID || 'APP_ID',
-    clientSecret: process.env.FACEBOOK_SECRET || 'APP_SECRET',
+    clientID: '225228177856507',
+    clientSecret: '3055a7c4ddf90fe591fe9088a0447cd5',
     callbackURL: '/api/auth/facebook/callback'
   },
   twitter: {
@@ -58,8 +62,8 @@ module.exports = {
     callbackURL: '/api/auth/linkedin/callback'
   },
   github: {
-    clientID: process.env.GITHUB_ID || 'APP_ID',
-    clientSecret: process.env.GITHUB_SECRET || 'APP_SECRET',
+    clientID: '4c0cdc86e1bbf134929c',
+    clientSecret: '564f850ddfeb7bde9f1b97187dc0b6fd372bd632',
     callbackURL: '/api/auth/github/callback'
   },
   paypal: {
